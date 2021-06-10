@@ -60,3 +60,25 @@ Los estilos en el `div`:
 <img src='./image6.png' alt='img' width='100%' />
 
 Y ya todo es cuestión de jugar con el height de la imagen para una mejor vista del producto en cualquier resolución de pantalla.
+
+## 5- Fix banner images
+
+<p style="background-color:#FC4D4D;color:white;">Este cambio es responsive, solo es para tablets y télefonos.</p>
+
+Para que las imagenes tengan el height que deben simplemente hay es que deshacerce de los `max-height` y `min-height`
+
+```
+{
+  width: 100%;
+  max-height: 100%;
+  min-height: auto;
+}
+```
+
+Se agregarían esos estilos a los styles de la siguiente etiqueta `img`:
+
+<img src='./image7.png' alt='img' width='100%' />
+
+Y se agregarían esos estilos también a los styles del siguiente `div`:
+
+<img src='./image8.png' alt='img' width='100%' />
